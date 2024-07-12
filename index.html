@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcações de Aulas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Marcações de Aulas no Ginásio</h1>
+    <form id="bookingForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="class">Aula:</label>
+        <select id="class" name="class" required>
+            <option value="Yoga">Yoga</option>
+            <option value="Pilates">Pilates</option>
+            <option value="Spinning">Spinning</option>
+            <option value="Zumba">Zumba</option>
+        </select>
+        
+        <label for="date">Data:</label>
+        <input type="date" id="date" name="date" required>
+        
+        <button type="button" onclick="addBooking()">Marcar Aula</button>
+    </form>
+
+    <h2>Lista de Marcações</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Aula</th>
+                <th>Data</th>
+            </tr>
+        </thead>
+        <tbody id="bookingList">
+            <!-- As marcações serão adicionadas aqui -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
